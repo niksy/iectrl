@@ -46,8 +46,8 @@ The `iectrl` command provides various sub-commands for manipulating one or many
 ievms virtual machines. The optional `names` argument may be a comma-separated
 (**no spaces**) list of virtual machine identifiers. The identifiers consist of 
 a number representing a given version of IE, an OS name 
-(`WinXP/Vista/Win7/Win8`), or an exact virtual machine name (`IE6 - WinXP`, 
-`IE7 - Vista`). See `iectrl <sub-command> --help` for more information:
+(`Win7/Win8`), or an exact virtual machine name (`IE9 - Win7`).
+See `iectrl <sub-command> --help` for more information:
 
 ```sh
 $ iectrl --help
@@ -88,17 +88,16 @@ See the [annotated source](http://xdissent.github.io/iectrl) or [karma-ievms](ht
 Examples
 --------
 
-Install all `WinXP` virtual machines from ievms (`IE6 - WinXP`, `IE7 - WinXP`, 
-`IE8 - WinXP`):
+Install all `Win7` virtual machines from ievms:
 
 ```sh
-$ iectrl install WinXP
+$ iectrl install Win7
 ```
 
-Reinstall all `Win7` virtual machines, plus IE 6 (`IE6 - WinXP`):
+Reinstall all `Win7` virtual machines:
 
 ```sh
-$ iectrl reinstall 6,Win7
+$ iectrl reinstall Win7
 ```
 
 Shrink the disk usage for IE10 by removing the `.ova` file used during install:
@@ -114,11 +113,11 @@ virtual machines if necessary:
 $ iectrl open -s 6,8 http://modern.ie
 ```
 
-Take a screenshot of the `IE7 - Vista` virtual machine, saving it to 
-`./shots/IE7 - Vista.png`:
+Take a screenshot of the `IE9 - Win7` virtual machine, saving it to 
+`./shots/IE9 - Win7.png`:
 
 ```sh
-$ iectrl screenshot 'IE7 - Vista' ./shots
+$ iectrl screenshot 'IE9 - Win7' ./shots
 ```
 
 Close all open IE browser windows:
