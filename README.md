@@ -27,7 +27,7 @@ Installation
 Globally:
 
 ```sh
-$ sudo npm install -g iectrl
+$ sudo npm install -g niksy/iectrl
 ```
 
 Locally:
