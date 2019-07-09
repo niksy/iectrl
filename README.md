@@ -88,7 +88,7 @@ See the [annotated source](http://xdissent.github.io/iectrl) or [karma-ievms](ht
 Examples
 --------
 
-Install all `Win7` virtual machines from ievms:
+Install all `Win7` virtual machines from ievms ('IE8 - Win7', 'IE9 - Win7', 'IE10 - Win7', 'IE11 - Win7'):
 
 ```sh
 $ iectrl install Win7
